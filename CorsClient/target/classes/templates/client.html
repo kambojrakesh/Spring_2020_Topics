@@ -1,0 +1,71 @@
+<<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1" />
+    <title>Spring Boot CORS Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br />
+<br />
+<div class="container" align="center">
+    <button id="greet" type="button" class="btn btn-primary">Get Student</button>
+</div>
+<br/>
+<div class="container" align="center">
+    <button id="greetpost" type="button" class="btn btn-primary">Create Student</button>
+</div>
+<h1 id="response"></h1>
+
+<h1 id="responsepost"></h1>
+
+<script>
+GET: $(document).ready(
+	    function() {
+
+	      // GET REQUEST
+	      $("#greet").click(function(event) {
+	        event.preventDefault();
+	        ajaxGet();
+	      });
+	      
+	      $("#greetpost").click(function(event) {
+		        event.preventDefault();
+		        ajaxPost();
+		      });
+
+	      // DO GET
+	      function ajaxGet() {
+	        $.ajax({
+	          url : "http://localhost:8080/cors/students",
+	          beforeSend: function (xhr) {
+                  xhr.setRequestHeader('Authorization', "abcd");
+              },
+	          success : function(result, status, xhr) {
+	        	alert(xhr.getResponseHeader("Keep-Alive"));
+	            $("#response").html(result);
+	          }
+	        });
+	      }
+	      
+	      function ajaxPost() {
+		        $.post({
+		          url : "http://localhost:8080/cors/students",
+		          success : function(result) {
+		            $("#responsepost").html(result);
+		          }
+		        });
+		      }
+	})
+</script> 
+</body>
+</html>

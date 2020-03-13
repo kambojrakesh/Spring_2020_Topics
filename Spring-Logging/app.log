@@ -1,0 +1,34 @@
+2020-01-09 14:23:06,552 INFO com.example.SpringLogging.SpringLoggingApplication [main] Starting SpringLoggingApplication on GURWUNI5F3103 with PID 10848 (D:\workspace-spring-tool-suite-4-4.4.1\springdemo\SpringLogging\target\classes started by GUR56750 in D:\workspace-spring-tool-suite-4-4.4.1\springdemo\SpringLogging)
+2020-01-09 14:23:06,554 DEBUG com.example.SpringLogging.SpringLoggingApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-09 14:23:06,554 INFO com.example.SpringLogging.SpringLoggingApplication [main] The following profiles are active: prod
+2020-01-09 14:23:14,867 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2020-01-09 14:23:28,605 INFO com.example.SpringLogging.SpringLoggingApplication [main] Starting SpringLoggingApplication on GURWUNI5F3103 with PID 18952 (D:\workspace-spring-tool-suite-4-4.4.1\springdemo\SpringLogging\target\classes started by GUR56750 in D:\workspace-spring-tool-suite-4-4.4.1\springdemo\SpringLogging)
+2020-01-09 14:23:28,607 DEBUG com.example.SpringLogging.SpringLoggingApplication [main] Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-09 14:23:28,607 INFO com.example.SpringLogging.SpringLoggingApplication [main] The following profiles are active: prod
+2020-01-09 14:23:31,003 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+

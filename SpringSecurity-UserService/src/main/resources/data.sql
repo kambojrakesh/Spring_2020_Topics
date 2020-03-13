@@ -1,0 +1,2 @@
+insert into USER (ID ,ACTIVE ,PASSWORD, ROLES ,USERNAME ) values (1,'TRUE','admin','ROLE_ADMIN','admin');
+insert into USER (ID ,ACTIVE ,PASSWORD, ROLES ,USERNAME ) values (2,'TRUE','user','ROLE_USER','user');
